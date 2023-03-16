@@ -7,19 +7,24 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace AppTesteCep
+namespace AppTesteCep.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Menu : ContentPage
+    public partial class BuscaEnderecoPorLogradouro : ContentPage
     {
-        public Menu()
+        public BuscaEnderecoPorLogradouro()
         {
             InitializeComponent();
         }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new View.BuscaCepPorLogradouro());
+
+        }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+
         }
     }
 }

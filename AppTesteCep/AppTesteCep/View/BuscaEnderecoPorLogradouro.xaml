@@ -1,18 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppTesteCep.View.BuscaCepPorLogradouro">
+             x:Class="AppTesteCep.View.BuscaEnderecoPorLogradouro">
+    
     <ContentPage.Content>
         <StackLayout>
 
             <StackLayout Orientation="Horizontal">
                 <SearchBar x:Name="txt_logradouro"
-                           Placeholder="Qual é sua rua?" />
-                <Button Text="Buscar" Clicked="Button_Clicked" />
+                           Placeholder="Qual é o seu endereço" />
+                <Button Text="Buscar" Clicked="Button_Clicked_1" />
             </StackLayout>
 
             <ActivityIndicator x:Name="carregando" IsRunning="False" />
-            
+
 
             <ListView x:Name="lst_ceps">
                 <ListView.Header>
