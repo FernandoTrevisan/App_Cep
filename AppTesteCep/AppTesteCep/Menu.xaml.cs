@@ -21,5 +21,20 @@ namespace AppTesteCep
         {
             Navigation.PushAsync(new View.BuscaCepPorLogradouro());
         }
+
+        private void Button_Clicked_1(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new View.BairroPorCidade());
+        }
+
+        private void Button_Clicked_2(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button_Clicked_3(object sender, EventArgs e)
+        {
+
+        }
     }
 }

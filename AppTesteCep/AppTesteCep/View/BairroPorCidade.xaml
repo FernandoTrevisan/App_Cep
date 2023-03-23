@@ -51,7 +51,7 @@
                        BorderColor="#00A54F"
                        Padding="90">
                     <StackLayout>
-                        <ActivityIndicator IsRunning="True" Color="#00A54F"/>
+                        <ActivityIndicator IsRunning="False" IsEnabled="False" Color="#00A54F"/>
                         <Label Text="Carregando..." HorizontalOptions="Center" TextColor="#00A54F"/>
                     </StackLayout>
                 </Frame>

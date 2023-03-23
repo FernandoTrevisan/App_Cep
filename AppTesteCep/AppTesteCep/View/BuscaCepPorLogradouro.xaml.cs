@@ -39,7 +39,16 @@ namespace AppTesteCep.View
                 carregando.IsRunning = false;
             }
 
+            
+
         }
+
+        public static string upper(string s)
+        {
+            return s[0].ToString().ToUpper() + s.Substring(1);
+        }
+
+
     }
     
 }

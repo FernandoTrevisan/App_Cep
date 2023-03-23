@@ -48,8 +48,20 @@ namespace AppTesteCep.View
 
         }
 
-        private void pck_cidade_SelectedIndexChanged(object sender, EventArgs e)
+        private async void pck_cidade_SelectedIndexChanged(object sender, EventArgs e)
         {
+            try
+            {
+                Picker disparador = sender as Picker;
+                string cidade_selecionado = disparador.SelectedItem as string;
+                List<Bairro> arr_bairros = await DataService.GetBairrosByIdCidade(cidade_selecionado);
+                lista_cidades.Clear();
+                arr_bairros.ForEach(i => lista_bairros.Add(i));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops", ex.Message, "OK");
+            }
 
         }
     }
