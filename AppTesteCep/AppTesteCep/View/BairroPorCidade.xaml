@@ -4,10 +4,10 @@
              x:Class="AppTesteCep.View.BairroPorCidade">
     <ContentPage.Content>
 
-        <AbsoluteLayout HorizontalOptions="FillAndExpand"
+        <StackLayout HorizontalOptions="FillAndExpand"
                         VerticalOptions="FillAndExpand">
 
-            <StackLayout Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal" Margin="15">
                 <Picker x:Name="pck_estado"
                         SelectedIndexChanged="pck_estado_SelectedIndexChanged"
                         Title="Selecione o Estado:">
@@ -57,6 +57,6 @@
                 </Frame>
             </StackLayout>
 
-        </AbsoluteLayout>
+        </StackLayout>
     </ContentPage.Content>
 </ContentPage>

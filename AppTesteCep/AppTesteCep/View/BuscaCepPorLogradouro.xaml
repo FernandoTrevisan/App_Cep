@@ -10,7 +10,7 @@
                        Placeholder="Qual a sua Rua?" Grid.Row="0" Grid.Column="0"/>
                 <Button Text="Buscar"
                     FontAttributes="Bold" Clicked="Button_Clicked" Margin="5"
-                         BackgroundColor="#004677" TextColor="white" 
+                         BackgroundColor="PowderBlue"  TextColor="white" 
                         Grid.Row="0" Grid.Column="1"/>
             </Grid>
 
@@ -19,22 +19,7 @@
             </ActivityIndicator>
 
             <ListView x:Name="lst_ceps" Margin="5">
-                <ListView.Header>
-                    <Grid ColumnDefinitions="Auto, *, *, Auto"
-                          RowDefinitions="Auto" BackgroundColor="#004677">
-                        <Label Grid.Row="0" Grid.Column="0" HorizontalOptions="Center"
-                               Text="CEP" FontAttributes="Bold"  FontSize="17" TextColor="white"/>
-
-                        <Label Grid.Row="0" Grid.Column="1" HorizontalOptions="Center"
-                               Text="Logradouro" FontAttributes="Bold"  FontSize="17" TextColor="white"/>
-
-                        <Label Grid.Row="0" Grid.Column="2" HorizontalOptions="Center"
-                               Text="Cidade" FontAttributes="Bold"  FontSize="17" TextColor="white"/>
-
-                        <Label Grid.Row="0" Grid.Column="3" HorizontalOptions="Center"
-                               Text="UF" FontAttributes="Bold" FontSize="17" TextColor="white"/>
-                    </Grid>
-                </ListView.Header>
+                
 
                 <ListView.ItemTemplate>
                     <DataTemplate>

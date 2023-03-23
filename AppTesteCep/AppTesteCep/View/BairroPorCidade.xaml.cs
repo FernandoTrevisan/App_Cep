@@ -53,8 +53,8 @@ namespace AppTesteCep.View
             try
             {
                 Picker disparador = sender as Picker;
-                string cidade_selecionado = disparador.SelectedItem as string;
-                List<Bairro> arr_bairros = await DataService.GetBairrosByIdCidade(cidade_selecionado);
+                Cidade cidade_selecionado = disparador.SelectedItem as Cidade;
+                List<Bairro> arr_bairros = await DataService.GetBairrosByIdCidade(cidade_selecionado.id_cidade);
                 lista_cidades.Clear();
                 arr_bairros.ForEach(i => lista_bairros.Add(i));
             }
