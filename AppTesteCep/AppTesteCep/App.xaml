@@ -4,5 +4,24 @@
              x:Class="AppTesteCep.App">
     <Application.Resources>
 
+        
+        <Style x:Key="ButtonStyle" TargetType="Button">
+            <Setter Property="BackgroundColor" Value="#4876FF" />
+            <Setter Property="TextColor" Value="Black" />
+            <Setter Property="FontSize" Value="20" />
+            <Setter Property="BorderRadius" Value="10" />
+            <Setter Property="HorizontalOptions" Value="Fill" />
+            <Setter Property="VerticalOptions" Value="Fill" />
+        </Style>
+
+        <Style x:Key="LabelStyle" TargetType="Label">
+            <Setter Property="HorizontalTextAlignment" Value="Center" />
+            <Setter Property="Padding" Value="20" />
+            <Setter Property="FontSize" Value="40" />
+            <Setter Property="TextColor" Value="#4169E1" />
+            <Setter Property="FontAttributes" Value="Bold" />
+        </Style>
+        
+        
     </Application.Resources>
 </Application>
