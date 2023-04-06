@@ -6,6 +6,6 @@ namespace AppTesteCep.Model
 {
     public class Bairro
     {
-        public string Descricao_Bairro { get; set; }    
+        public string descricao_bairro { get; set; }    
     }
 }

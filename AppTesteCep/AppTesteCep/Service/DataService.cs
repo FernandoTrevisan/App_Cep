@@ -18,7 +18,7 @@ namespace AppTesteCep.Service
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync("https://10.0.2.2:8000/endereco/by-cep?cep=");
+                HttpResponseMessage response = await client.GetAsync("http://10.0.2.2:8000/endereco/by-cep?cep=");
                 
                 //cep.metoda.com.br
 
@@ -41,7 +41,7 @@ namespace AppTesteCep.Service
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync("https://10.0.2.2:8000/bairro/by-cidade?id_cidade=");
+                HttpResponseMessage response = await client.GetAsync("http://10.0.2.2:8000/bairro/by-cidade?id_cidade=");
                 if (response.IsSuccessStatusCode)
                     
                 {
@@ -63,7 +63,7 @@ namespace AppTesteCep.Service
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync("https://10.0.2.2:8000/cidade/by-uf?uf=" + uf);
+                HttpResponseMessage response = await client.GetAsync("http://10.0.2.2:8000/cidade/by-uf?uf=" + uf);
 
                 if (response.IsSuccessStatusCode)
                 {
@@ -84,7 +84,7 @@ namespace AppTesteCep.Service
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync("https://10.0.2.2:8000/logradouro/by-bairro?id_cidade=" + id_cidade + "&bairro=" + bairro);
+                HttpResponseMessage response = await client.GetAsync("http://10.0.2.2:8000/logradouro/by-bairro?id_cidade=" + id_cidade + "&bairro=" + bairro);
                 if (response.IsSuccessStatusCode)
                 {
                     string json = response.Content.ReadAsStringAsync().Result;
@@ -102,7 +102,7 @@ namespace AppTesteCep.Service
 
             using (HttpClient client = new HttpClient())
             {
-                HttpResponseMessage response = await client.GetAsync("https://10.0.2.2:8000/cep/by-logradouro?logradouro=" + logradouro);
+                HttpResponseMessage response = await client.GetAsync("http://10.0.2.2:8000/cep/by-logradouro?logradouro=" + logradouro);
 
                 if (response.IsSuccessStatusCode)
                 {
